@@ -1,0 +1,34 @@
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+benchmark_fib is a Catch v2.13.7 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+Benchmark fibonacci
+-------------------------------------------------------------------------------
+/Users/andreasmitillos/Documents/MSMF-Programming/ib9jh/lab3-andreasmitillos/tests/benchmark_fib.cpp:8
+...............................................................................
+
+benchmark name                       samples       iterations    estimated
+                                     mean          low mean      high mean
+                                     std dev       low std dev   high std dev
+-------------------------------------------------------------------------------
+Fibonacci with loop                            100           544     2.5568 ms 
+                                        47.4764 ns    46.4968 ns    50.7791 ns 
+                                        7.94896 ns   0.861208 ns    17.8365 ns 
+                                                                               
+Fibonacci with recursion                       100             1    495.817 ms 
+                                        4.91964 ms     4.9092 ms    4.93249 ms 
+                                        58.7168 us    49.0066 us    81.9508 us 
+                                                                               
+Fibonacci with tail recursion                  100           410      2.583 ms 
+                                        62.4292 ns    62.1722 ns    63.4435 ns 
+                                         2.3752 ns    0.29971 ns    5.62826 ns 
+                                                                               
+
+===============================================================================
+test cases: 1 | 1 passed
+assertions: - none -
+
+- Fibonacci with recursion is the slowest
+- Fastests seems to be the fibonacci with loop
